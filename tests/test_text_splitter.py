@@ -23,3 +23,8 @@ def test_text_splits_with_overlap():
         "IJKLMN",
         "MNO",
     ]
+    
+def test_empty_text_returns_no_chunks():
+    chunks = split_text("")
+
+    assert chunks == []
